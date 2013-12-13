@@ -78,7 +78,7 @@ var blissify = require('blissify');
 blissify.verbose = true;
 ```
 
-when enabled, debug mode will `console.log` each time a raw template is successfully recompiled and `console.error` whenever a parse error occurs. this is super helpful if you're using [watchify](https://github.com/substack/watchify). an error will look like:
+when enabled, debug mode will `console.log` when a raw template is successfully recompiled and `console.error` when a parse error occurs. this is super helpful if you're using [watchify](https://github.com/substack/watchify). an error will look like:
 
 ```
 [blissify] error: <badTemplate.html>
