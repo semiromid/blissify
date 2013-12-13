@@ -40,7 +40,7 @@ $('body').html(template({name: 'Nali'}));
 
 ### transform
 
-use it as Browserify transform module with `-t`
+use it as browserify transform module with `-t`
 
 ```
 browserify -t blissify main.js > bundle.js
