@@ -30,6 +30,10 @@ function blissify (file) {
 
     try {
       fn = bliss.compile(src);
+
+      if (blissify.verbose) {
+        console.error('[blissify] compiled:', file);
+      }
     } catch (e) {
       if (blissify.verbose) {
         console.error('[blissify] error:', file);
