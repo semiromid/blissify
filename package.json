@@ -1,6 +1,6 @@
 {
   "name": "blissify",
-  "version": "1.0.0-rc1",
+  "version": "1.0.0-rc2",
   "description": "a browserify v2 plugin for bliss",
   "main": "index.js",
   "scripts": {
