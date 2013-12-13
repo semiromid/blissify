@@ -13,6 +13,12 @@ npm install blissify
 
 ## usage
 
+install blissify locally to your project
+
+```
+npm install blissify
+```
+
 create templates using [bliss](https://github.com/cstivers78/bliss/wiki); by default blissify transforms `.html` files
 
 ```
@@ -28,11 +34,8 @@ var template = require('template.html');
 $('body').html(template({name: 'Nali'}));
 ```
 
-install blissify locally to your project
 
-```
-npm install blissify
-```
+## transform
 
 use it as Browserify transform module with `-t`
 
@@ -40,7 +43,7 @@ use it as Browserify transform module with `-t`
 browserify -t blissify main.js > bundle.js
 ```
 
-in your `bundler.js` use blissify as a transform
+or, in your `bundler.js` use blissify as a transform
 
 ```
 var browserify = require('browserify');
@@ -65,18 +68,17 @@ node bundler
 bundler.transform(blissify.configure('.bliss'));
 ```
 
+
 ## debug
 
-to set the compiler in debug mode, set `verbose=true` when instatiating blissify
+to set the transformer in debug mode, set `verbose=true` when instatiating blissify
 
 ```
 var blissify = require('blissify');
 blissify.verbose = true;
 ```
 
-when enabled, debug mode will `console.error` whenever a parse error occurs. this is super helpful if you're using [watchify](https://github.com/substack/watchify).
-
-the log will look like:
+when enabled, debug mode will `console.error` whenever a parse error occurs. this is super helpful if you're using [watchify](https://github.com/substack/watchify). the log will look like:
 
 ```
 [blissify] error: <badTemplate.html>
