@@ -78,14 +78,20 @@ var blissify = require('blissify');
 blissify.verbose = true;
 ```
 
-when enabled, debug mode will `console.error` whenever a parse error occurs. this is super helpful if you're using [watchify](https://github.com/substack/watchify). the log will look like:
+when enabled, debug mode will `console.log` each time a raw template is successfully recompiled and `console.error` whenever a parse error occurs. this is super helpful if you're using [watchify](https://github.com/substack/watchify). an error will look like:
 
 ```
 [blissify] error: <badTemplate.html>
 <errorStackTrace>
 ```
 
-(note that when in debug mode, an error is not passed to the `through` stream.)
+note that when in debug mode, an error is not passed to the `through` stream.
+
+
+## upgrading from `0.1.x` to `1.0.0`?
+
+- if using a custom file extension, make sure to use the new configuration pattern
+- if using a bundler script, make sure to change `b.transform(blissify())` to `b.transform(blissify)`
 
 
 ## tests
