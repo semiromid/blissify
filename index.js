@@ -43,7 +43,7 @@ function blissify (file) {
     this.queue('module.exports=' + fn.toString());
     this.queue(null);
   }
-};
+}
 
 blissify.configure = function(ext) {
   if(ext) extension = ext;
