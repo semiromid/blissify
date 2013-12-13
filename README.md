@@ -13,11 +13,15 @@ npm install blissify
 
 ## usage
 
+### install
+
 install blissify locally to your project
 
 ```
 npm install blissify
 ```
+
+### make a bliss template
 
 create templates using [bliss](https://github.com/cstivers78/bliss/wiki); by default blissify transforms `.html` files
 
@@ -34,8 +38,7 @@ var template = require('template.html');
 $('body').html(template({name: 'Nali'}));
 ```
 
-
-## transform
+### transform
 
 use it as Browserify transform module with `-t`
 
