@@ -1,6 +1,6 @@
 {
   "name": "blissify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a browserify v2 plugin for bliss",
   "main": "index.js",
   "scripts": {
@@ -12,17 +12,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/agilemd/blissify"
+    "url": "https://github.com/kurttheviking/blissify"
   },
   "keywords": [
     "blissy",
     "browserify"
   ],
-  "author": "AgileMD <hello@agilemd.com>",
+  "author": "kurttheviking <kurttheviking@outlook.com>",
   "contributors": [
-    "jden <jason@denizac.org>",
-    "agilekurt <kurt@agilemd.com>",
-    "edmellum <david@edmellum.com>"
+    "edmellum <david@edmellum.com>",
+    "kurttheviking <kurttheviking@outlook.com>",
+    "jden <jason@denizac.org>"
   ],
   "license": "MIT",
   "readmeFilename": "README.md"
