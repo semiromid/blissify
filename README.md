@@ -19,8 +19,8 @@ npm install blissify
 Create templates using [bliss](https://github.com/cstivers78/bliss/wiki); by default blissify transforms `.html` files
 
 ```
-@!(name)
-<h1>Hello @name!</h1>
+@!(obj)
+<h1>Hello @obj.name!</h1>
 ```
 
 Require and use those templates in your view (backbone), controller (spine), etc.
